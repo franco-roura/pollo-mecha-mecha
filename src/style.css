@@ -1,0 +1,30 @@
+:root {
+  color-scheme: light dark;
+  background-color: #242424;
+  overflow: visible;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#pollo {
+  position: absolute;
+  transition: left 0.5s linear;
+}
+
+#cta {
+  margin: auto;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
