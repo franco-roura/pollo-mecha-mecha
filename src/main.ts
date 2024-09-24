@@ -26,7 +26,7 @@ const animateThePollo = () => {
   }
 };
 
-let interval: NodeJS.Timeout;
+let interval: ReturnType<typeof setInterval>;
 mecha.addEventListener("play", () => {
   interval = setInterval(animateThePollo, 300);
 });
